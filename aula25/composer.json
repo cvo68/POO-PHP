@@ -1,0 +1,16 @@
+{
+    "description": "Primeiro projeto usando COMPOSER",
+    "authors": [
+        {
+            "name": "Charliston Vilela",
+            "email": "cvo68@outlook.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Sts\\":"app/sts",
+            "Core\\": "core"
+        }
+    },
+    "require": {}
+}
