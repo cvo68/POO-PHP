@@ -29,6 +29,13 @@
                 $this-> urlMetodo = "index";
             }
             print "Controller: {$this-> urlController} - Metodo: {$this-> urlMetodo} <br>";
-        }  
+        } 
+
+        public function loadPage(){
+            print "Carregar a pagina <br>";
+            $classLoad = "\\Sts\Controllers\\". $this->urlController;
+            $classPage = new $classLoad();
+            $classPage->index();
+        }
     }
 ?>
